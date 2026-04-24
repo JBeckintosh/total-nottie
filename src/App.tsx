@@ -1,12 +1,11 @@
 import { Hero } from './components/Hero'
 import { ProjectCard } from './components/ProjectCard'
-import { SiteFooter } from './components/SiteFooter'
-import { footerLinks, profile, projects } from './siteContent'
+import { projects } from './siteContent'
 
 function App() {
   return (
     <div className="page">
-      <Hero profile={profile} />
+      <Hero />
       <main className="main">
         <ul className="project-grid">
           {projects.map((project) => (
@@ -14,7 +13,6 @@ function App() {
           ))}
         </ul>
       </main>
-      <SiteFooter links={footerLinks} />
     </div>
   )
 }

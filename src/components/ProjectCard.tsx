@@ -14,7 +14,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         target="_blank"
       >
         <span className="project-card__title">
-          <img src={project.icon} />
+          <img className="project-card__icon" src={project.icon} />
           {project.title}
           </span>
         <img className="project-card__img" src={project.img} />

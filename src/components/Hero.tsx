@@ -1,13 +1,7 @@
-import type { Profile } from '../siteContent'
-
-type HeroProps = {
-  profile: Profile
-}
-
-export function Hero({ profile }: HeroProps) {
+export function Hero() {
   return (
     <header className="hero">
-      <h1 className="hero__title">{profile.name}</h1>
+      <h1 className="hero__title">Total Nottie</h1>
       <p className="hero__eyebrow">Projects:</p>
     </header>
   )
